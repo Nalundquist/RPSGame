@@ -6,9 +6,10 @@ namespace Bake.Loaves
 	{
 		public string BreadType { get; set; }
 		public int BreadPrice { get; set; }
-		public Bread(string breadType)
+		public Bread(string breadType, int BreadPrice)
 		{
-			BreadType = "fffff";
+			BreadType = breadType;
+			BreadPrice = 0;
 		}
 	}
 }
