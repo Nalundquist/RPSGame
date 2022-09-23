@@ -19,7 +19,7 @@ namespace Bake.Cakes
 			int orderPrice = 0;
 			for (int i = 2; i < _pastryOrder.Count; i += 3)
 			{
-				_pastryOrder[i].PastryPrice = 0;
+				_pastryOrder[i].PastryPrice -= 1;
 			}
 			foreach (Pastry pastry in _pastryOrder)
 			{
