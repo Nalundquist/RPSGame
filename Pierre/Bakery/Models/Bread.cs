@@ -17,11 +17,13 @@ namespace Bake.Loaves
 		public static int BreadTab()
 		{
 			int orderPrice = 0;
+			for (int i = 2; i < _breadOrder.Count; i += 3)
+			{
+				_breadOrder[i].BreadPrice = 0;
+			}
 			foreach (Bread bread in _breadOrder)
 			{
 			orderPrice += bread.BreadPrice;
-			Console.WriteLine("Bread Price = " + bread.BreadPrice);
-			Console.WriteLine("Order Price = " + orderPrice);
 			}
 			return orderPrice;
 		}

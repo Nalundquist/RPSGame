@@ -41,7 +41,10 @@ namespace Bake.Loaves.Tests
 			Bread newOlive2 = new Bread("Olive", 5);
 			Bread newPump3 = new Bread("Pumpernickel", 5);
 			Bread newOlive3 = new Bread("Olive", 5);
-			Assert.AreEqual(20, Bread.BreadTab());
+			Bread newOlive4 = new Bread("Olive", 5);
+			Bread newPump4 = new Bread("Pumpernickel", 5);
+			Bread newOlive5 = new Bread("Olive", 5);
+			Assert.AreEqual(30, Bread.BreadTab());
 		}
 	}
 }
