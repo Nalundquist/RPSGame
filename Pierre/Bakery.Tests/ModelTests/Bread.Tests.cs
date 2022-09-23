@@ -19,5 +19,12 @@ namespace Bake.Loaves.Tests
 			Bread newPump = new Bread("Pumpernickel", 2);
 			Assert.AreEqual(2, newPump.BreadPrice);
 		}
+		[TestMethod]
+		public void BreadTab_ReturnsBreadPrices_True()
+		{
+			Bread newPump = new Bread("Pumpernickel", 2);
+			Bread newOlive = new Bread("Olive", 2);
+			Assert.AreEqual(4, Bread.BreadTab());
+		}
 	}
 }

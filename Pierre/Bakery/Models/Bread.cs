@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 
 namespace Bake.Loaves
 {
@@ -6,10 +7,14 @@ namespace Bake.Loaves
 	{
 		public string BreadType { get; set; }
 		public int BreadPrice { get; set; }
-		public Bread(string breadType, int BreadPrice)
+		public Bread(string breadType, int breadPrice)
 		{
 			BreadType = breadType;
-			BreadPrice = 0;
+			BreadPrice = breadPrice;
+		}
+		public static int BreadTab()
+		{
+			return 0;
 		}
 	}
 }
