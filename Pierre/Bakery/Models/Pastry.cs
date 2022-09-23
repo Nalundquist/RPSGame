@@ -23,10 +23,11 @@ namespace Bake.Cakes
 			}
 			foreach (Pastry pastry in _pastryOrder)
 			{
-			orderPrice += pastry.PastryPrice;
+				orderPrice += pastry.PastryPrice;
 			}
 			return orderPrice;
 		}
+		
 		public static void ClearOrder()
 		{
 			_pastryOrder.Clear();
