@@ -1,6 +1,6 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-// using System.Collections.Generic;
-// using Bake.Loaves;
+using System.Collections.Generic;
+using Bake.Loaves;
 using System;
 
 namespace Bake.Loaves.Tests
@@ -16,7 +16,7 @@ namespace Bake.Loaves.Tests
 		[TestMethod]
 		public void Bread_HoldsLoaf_True()
 		{
-			Bread newPump = new Bread("Pumpernickel", 2);
+			Bread newPump = new Bread("Pumpernickel", 5);
 			Assert.AreEqual("Pumpernickel", newPump.BreadType);
 		}		
 		[TestMethod]
